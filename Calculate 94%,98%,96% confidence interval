@@ -1,0 +1,10 @@
+# Code to find 94% confidence interval 
+n = 2000   #no.of observations
+xbar = 200 #sample mean
+s = 30     #sample standard deviation
+import math 
+from scipy import stats 
+t = stats.t.ppf(0.97, df = 1999) 
+Upper_Interval = round(xbar + t*s/ math.sqrt(n), 2) 
+Lower_Interval =round( xbar - t*s/ math.sqrt(n), 2) 
+print('94% Confidence interval is: ',Lower_Interval,'-',Upper_Interval)
