@@ -1,0 +1,15 @@
+import pandas as pd                                              # importing pandas library
+df = pd.read_csv('C:/Users/17pol/Downloads/Q9_a.csv')            # to read the uploaded csv file
+print(df.skew())                                                 # to find skewness of data
+df.kurt()                                                        # to find kurtosis of data
+
+Output             Speed      Distance
+Skewness       -0.117510      0.806895
+Kurtosis       -0.508994      0.405053
+
+Inferences:
+1. Speed skewness is within range -0.5 to 0.5 thus, data is fairly symmetrical
+2. Distance data has a positive skewness less than 1 thus, it is moderately right skewed data
+3. Speed kurtosis is less than zero and thus is a platykurtic data with light tails
+4. Distance kurtosis is greater than zero and thus a leptokurtic data with heavy tails.
+5. But, both the kurtosis values are nearing zero, thus it can be inferred that the data is nearly normal and mesokurtic.
