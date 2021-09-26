@@ -1,0 +1,6 @@
+#code snippet for histogram plot of data
+import pandas as pd
+df = pd.read_csv('C:/Users/17pol/Downloads/Cars.csv')
+import matplotlib.pyplot as plt
+%matplotlib inline
+plt.hist(df['MPG'], facecolor = 'blue', edgecolor = 'red', bins = 10 )
