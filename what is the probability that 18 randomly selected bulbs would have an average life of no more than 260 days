@@ -1,0 +1,9 @@
+import pandas as pd
+import math
+from scipy import stats
+xbar = 260
+s=90
+mu = 270
+t_score = (xbar - mu)/(s/math.sqrt(18))
+t_score
+print('Probability that average life of no more than 260 is',stats.t.cdf(t_score,17))
