@@ -1,0 +1,9 @@
+# Code snippet to find the above measures
+import numpy as np
+import pandas as pd
+List = [34,36,36,38,38,39,39,40,40,41,41,41,41,42,42,45,49,56]
+df = pd.DataFrame(List)
+print('Mean: ',df.mean())
+print('Median: ',df.median())
+print('Variance: ',df.var())
+print('StdDev: ',df.std())
