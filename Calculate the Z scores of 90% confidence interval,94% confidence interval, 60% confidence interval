@@ -1,0 +1,5 @@
+# code snippet to calculate z scores
+from scipy import stats
+print('90% confidence interval z-score: ',round(stats.norm.ppf(0.95),2))
+print('94% confidence interval z-score: ',round(stats.norm.ppf(0.97),2))
+print('60% confidence interval z-score: ',round(stats.norm.ppf(0.80),2))
