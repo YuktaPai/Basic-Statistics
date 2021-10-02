@@ -1,10 +1,20 @@
-#code snippet to check probability:
+#code snippet 
+
+# importing pandas library and reading csv file
 import pandas as pd
 df = pd.read_csv('C:/Users/17pol/Downloads/Cars.csv')
+
+# calculating mean and standard deviation for the MPG data
 mu = df['MPG'].mean()
 sig = df['MPG'].std()
+
+# importing stats 
 from scipy import stats
+
+# calculating z-scores for the given intervals
 prob1 = round(1 -stats.norm.cdf(38, mu, sig),2)
 prob2 = round(stats.norm.cdf(40, mu, sig), 2)
 prob3 = round(stats.norm.cdf(50, mu, sig) -stats.norm.cdf(20, mu, sig),2)
+
+# printing the results
 print (' prob1:',prob1,'\n prob2:',prob2,'\n prob3:',prob3)
