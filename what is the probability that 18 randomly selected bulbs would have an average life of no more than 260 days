@@ -1,9 +1,20 @@
+# Importing pandas library
 import pandas as pd
+
+# Importing math functions
 import math
+
+# Importing stats from scipy for statistical analysis
 from scipy import stats
+
+# Assigning the given values to parametric variables
 xbar = 260
 s=90
 mu = 270
+
+# Calculatinf the t score and not z score as sample standard deviation is given and population standard deviation is unknown
 t_score = (xbar - mu)/(s/math.sqrt(18))
 t_score
+
+# Result
 print('Probability that average life of no more than 260 is',stats.t.cdf(t_score,17))
