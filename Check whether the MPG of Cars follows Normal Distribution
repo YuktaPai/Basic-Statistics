@@ -1,6 +1,12 @@
-#code snippet for histogram plot of data
+# importing pandas and reading the csv file
 import pandas as pd
 df = pd.read_csv('C:/Users/17pol/Downloads/Cars.csv')
+
+# importing matplotlib pyplot library
 import matplotlib.pyplot as plt
+
+# inline command to get output plots on the same window as commands'
 %matplotlib inline
+
+#code snippet for histogram plot of data
 plt.hist(df['MPG'], facecolor = 'blue', edgecolor = 'red', bins = 10 )
