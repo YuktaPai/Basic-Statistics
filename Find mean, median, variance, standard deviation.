@@ -1,8 +1,16 @@
 # Code snippet to find the above measures
+
+# importing pandas and numpy libraries
 import numpy as np
 import pandas as pd
+
+# Creating a list for the given values
 List = [34,36,36,38,38,39,39,40,40,41,41,41,41,42,42,45,49,56]
+
+# converting list to datatframe
 df = pd.DataFrame(List)
+
+# Finding mean, median, variance and standard deviation for the lists
 print('Mean: ',df.mean())
 print('Median: ',df.median())
 print('Variance: ',df.var())
